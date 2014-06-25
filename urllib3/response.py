@@ -4,7 +4,6 @@
 # This module is part of urllib3 and is released under
 # the MIT License: http://www.opensource.org/licenses/mit-license.php
 
-
 import zlib
 import io
 from socket import timeout as SocketTimeout
@@ -13,10 +12,7 @@ from ._collections import HTTPHeaderDict
 from .exceptions import ConnectionError, DecodeError, ReadTimeoutError
 from .packages.six import string_types as basestring, binary_type
 from .connection import HTTPException
-from .util.response import is_fp_closed
-
-
-log = logging.getLogger(__name__)
+from .util.request import is_fp_closed
 
 
 class DeflateDecoder(object):
