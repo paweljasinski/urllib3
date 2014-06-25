@@ -12,7 +12,7 @@ from ._collections import HTTPHeaderDict
 from .exceptions import ConnectionError, DecodeError, ReadTimeoutError
 from .packages.six import string_types as basestring, binary_type
 from .connection import HTTPException
-from .util.request import is_fp_closed
+from .util.response import is_fp_closed
 
 
 class DeflateDecoder(object):
